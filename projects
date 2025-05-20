@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Upcoming Projects - Little Logic Labs</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<header class="hero">
+  <h1>Little Logic Labs</h1>
+  <p>Where Kids Code Their Creativity</p>
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="mission.html">Our Mission</a>
+    <a href="about.html">About Us</a>
+    <a href="programs.html">Programs</a>
+    <a href="projects.html">Upcoming Projects</a>
+    <a href="sponsors.html">Sponsors</a>
+    <a href="get-involved.html">Get Involved</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="intro">
+    <h2>Upcoming Projects</h2>
+    <p>
+      We are excited about many new initiatives to expand our reach and impact! Stay tuned for updates on coding workshops, robotics competitions, and community outreach events.
+    </p>
+    <p><em>This page is a work in progress. Please check back soon for detailed project info.</em></p>
+  </section>
+</main>
+
+<footer>
+  <p>Contact us: <a href="mailto:saanvi@littlelogiclabs.com">saanvi@littlelogiclabs.com</a></p>
+</footer>
+
+</body>
+</html>
