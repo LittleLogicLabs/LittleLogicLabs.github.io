@@ -1,15 +1,22 @@
-<!DOCTYPE html>
+
+   <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact - Little Logic Labs</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("collapsed");
+    }
+  </script>
 </head>
 <body>
-  <header class="hero">
-    <h1>Little Logic Labs</h1>
-    <p>Where Kids Code Their Creativity</p>
+
+  <!-- Sidebar Navigation -->
+  <div class="sidebar collapsed" id="sidebar">
     <nav class="main-nav">
       <a href="index.html">Home</a>
       <a href="mission.html">Our Mission</a>
@@ -20,9 +27,18 @@
       <a href="get-involved.html">Get Involved</a>
       <a href="contact.html">Contact</a>
     </nav>
-  </header>
+  </div>
 
-  <main>
+  <!-- Toggle Button -->
+  <button class="floating-toggle" onclick="toggleSidebar()">☰</button>
+
+  <!-- Page Content -->
+  <main class="content">
+    <header class="hero">
+      <h1>Little Logic Labs</h1>
+      <p>Where Kids Code Their Creativity</p>
+    </header>
+
     <section class="intro">
       <h2>Contact Us</h2>
       <p>
@@ -37,5 +53,6 @@
   <footer>
     <p>Contact us: <a href="mailto:saanvi@littlelogiclabs.com">saanvi@littlelogiclabs.com</a></p>
   </footer>
+
 </body>
 </html>
