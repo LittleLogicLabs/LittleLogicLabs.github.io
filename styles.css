@@ -739,3 +739,26 @@ footer a {
   });
 </script>
 
+
+    .centered-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* adjust as needed */
+  text-align: center;
+}
+
+    <div class="sidebar collapsed">
+  <!-- sidebar content -->
+</div>
+
+
+    .sidebar.collapsed {
+  transform: translateX(-100%);
+}
+
+.sidebar.collapsed + .content {
+  margin-left: 0;
+}
+
+
