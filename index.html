@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Little Logic Labs</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <header class="hero">
-    <h1>Little Logic Labs</h1>
-    <p>Where Kids Code Their Creativity</p>
+  <body>
+
+  <div class="sidebar collapsed" id="sidebar">
     <nav class="main-nav">
       <a href="index.html">Home</a>
       <a href="mission.html">Our Mission</a>
@@ -22,37 +22,56 @@
       <a href="get-involved.html">Get Involved</a>
       <a href="contact.html">Contact</a>
     </nav>
-  </header>
+  </div>
 
-  <main>
-    <section class="intro">
-      <h2>Welcome to Little Logic Labs</h2>
-      <p>
-        Little Logic Labs is a nonprofit organization dedicated to making coding fun and accessible for kids. We aim to ignite creativity, build confidence, and spark a lifelong interest in technology through innovative, playful programs. Our hands-on approach blends coding with storytelling and problem-solving to reach young minds where they are.
-      </p>
-    </section>
+  <!-- NEW TOGGLE BUTTON -->
+  <button class="floating-toggle" onclick="toggleSidebar()">☰</button>
 
-    <section class="features">
-      <div class="feature">
-        <h3>Playful Learning</h3>
-        <p>Combining stories, games, and digital tools to teach real-world coding skills.</p>
-      </div>
-      <div class="feature">
-        <h3>Confident Coders</h3>
-        <p>Our students grow into creative, resilient problem-solvers through guided exploration.</p>
-      </div>
-      <div class="feature">
-        <h3>Creative Thinkers</h3>
-        <p>From animation to logic puzzles, kids engage in projects that challenge their minds.</p>
-      </div>
-    </section>
+  <main class="content">
+    <!-- Your content here -->
   </main>
 
-  <footer>
-    <p>Contact us: <a href="mailto:saanvi@littlelogiclabs.com">saanvi@littlelogiclabs.com</a></p>
-  </footer>
+
+  <div class="content">
+    <header class="hero">
+      <h1>Little Logic Labs</h1>
+      <p>Where Kids Code Their Creativity</p>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h2>Welcome to Little Logic Labs</h2>
+        <p>
+          Little Logic Labs is a nonprofit organization dedicated to making coding fun and accessible for kids. We aim to ignite creativity, build confidence, and spark a lifelong interest in technology through innovative, playful programs. Our hands-on approach blends coding with storytelling and problem-solving to reach young minds where they are.
+        </p>
+      </section>
+
+      <section class="features">
+        <div class="feature">
+          <h3>Playful Learning</h3>
+          <p>Combining stories, games, and digital tools to teach real-world coding skills.</p>
+        </div>
+        <div class="feature">
+          <h3>Confident Coders</h3>
+          <p>Our students grow into creative, resilient problem-solvers through guided exploration.</p>
+        </div>
+        <div class="feature">
+          <h3>Creative Thinkers</h3>
+          <p>From animation to logic puzzles, kids engage in projects that challenge their minds.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Contact us: <a href="mailto:saanvi@littlelogiclabs.com">saanvi@littlelogiclabs.com</a></p>
+    </footer>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      document.querySelector(".sidebar").classList.toggle("collapsed");
+    }
+  </script>
 
 </body>
 </html>
-
-
