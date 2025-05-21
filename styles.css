@@ -1,4 +1,4 @@
-/* Google Font */
+* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 * {
@@ -218,3 +218,188 @@ footer a {
     width: 90%;
   }
 }
+
+
+.code-values-condensed {
+  background-color: #121a43;
+  border: 2px solid #2c3e8c;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(75, 120, 200, 0.3);
+  text-align: center;
+  margin: 3rem auto;
+  max-width: 1100px;
+}
+
+.code-values-condensed h2 {
+  font-size: 2rem;
+  color: #a3b8ff;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.code-values-condensed .highlight {
+  background: linear-gradient(90deg, #4a90e2, #a1c4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+.logic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.logic-card {
+  background-color: #1d2754;
+  border: 2px solid #3a4f9d;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 15px rgba(74, 144, 226, 0.3);
+  position: relative;
+  color: #d6dffb;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logic-card::before {
+  content: attr(data-letter);
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  background: #4a90e2;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #4a90e2;
+}
+
+.logic-card h3 {
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+  color: #e3eaff;
+}
+
+.logic-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.logic-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(90, 160, 255, 0.5);
+}
+
+/* Sidebar styles */
+.sidebar {
+  background-color: #071029;
+  color: white;
+  width: 220px;
+  min-height: 100vh;
+  padding-top: 1rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar.collapsed {
+  transform: translateX(-100%);
+}
+
+.sidebar .toggle-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.sidebar .main-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.sidebar .main-nav a {
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar .main-nav a:hover {
+  background-color: #4a90e2;
+}
+
+/* When sidebar is collapsed, shift it out of view */
+.content {
+  margin-left: 220px;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar.collapsed + .content {
+  margin-left: 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+    transform: translateX(-100%);
+  }
+
+  .sidebar.collapsed {
+    transform: translateX(0);
+  }
+
+  .sidebar .toggle-btn {
+    position: absolute;
+    top: 10px;
+    left: 100%;
+    background-color: #071029;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .sidebar.collapsed + .content {
+    margin-left: 200px;
+  }
+}
+.floating-toggle {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 0.6rem 0.9rem;
+  font-size: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+  z-index: 1100;
+  transition: background-color 0.3s ease;
+}
+
+.floating-toggle:hover {
+  background-color: #3579c4;
+}
+
+
+
+
+
