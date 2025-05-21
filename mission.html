@@ -6,10 +6,16 @@
   <title>Our Mission - Little Logic Labs</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("collapsed");
+    }
+  </script>
 </head>
 <body>
-  <header class="hero">
-    <h1>Our Mission</h1>
+
+  <!-- Sidebar Nav -->
+  <div class="sidebar collapsed" id="sidebar">
     <nav class="main-nav">
       <a href="index.html">Home</a>
       <a href="mission.html">Our Mission</a>
@@ -20,9 +26,17 @@
       <a href="get-involved.html">Get Involved</a>
       <a href="contact.html">Contact</a>
     </nav>
-  </header>
+  </div>
 
-  <main>
+  <!-- Floating Toggle Button -->
+  <button class="floating-toggle" onclick="toggleSidebar()">☰</button>
+
+  <!-- Page Content -->
+  <main class="content">
+    <header class="hero">
+      <h1>Our Mission</h1>
+    </header>
+
     <section class="intro">
       <h2>Mission Statement</h2>
       <p>
@@ -30,13 +44,48 @@
       </p>
 
       <h3>Our Core Values</h3>
-      <ul>
-        <li><strong>Creativity:</strong> Encouraging kids to think outside the box and bring their ideas to life.</li>
-        <li><strong>Curiosity:</strong> Fostering a love for learning and discovery through interactive coding challenges.</li>
-        <li><strong>Confidence:</strong> Building self-esteem by empowering children to solve problems and create projects independently.</li>
-        <li><strong>Community:</strong> Creating a supportive environment where kids, parents, and educators collaborate and grow together.</li>
-        <li><strong>Accessibility:</strong> Ensuring technology education is available to all children regardless of background.</li>
-      </ul>
+      
+      <section class="code-values-condensed">
+        <h2>What <span class="highlight">LOGIC LABS</span> Means to Us</h2>
+        <div class="logic-grid">
+          <div class="logic-card" data-letter="L">
+            <h3>Learn by Doing</h3>
+            <p>Experience is the best teacher.</p>
+          </div>
+          <div class="logic-card" data-letter="O">
+            <h3>Own Your Code</h3>
+            <p>Take pride in your work.</p>
+          </div>
+          <div class="logic-card" data-letter="G">
+            <h3>Grow Your Ideas</h3>
+            <p>Creativity fuels innovation.</p>
+          </div>
+          <div class="logic-card" data-letter="I">
+            <h3>Iterate to Improve</h3>
+            <p>Try, test, tweak, repeat.</p>
+          </div>
+          <div class="logic-card" data-letter="C">
+            <h3>Collaborate & Create</h3>
+            <p>Teamwork makes cool things happen.</p>
+          </div>
+          <div class="logic-card" data-letter="L">
+            <h3>Lead with Curiosity</h3>
+            <p>Ask questions, follow wonder.</p>
+          </div>
+          <div class="logic-card" data-letter="A">
+            <h3>Always Debug</h3>
+            <p>Mistakes are learning moments.</p>
+          </div>
+          <div class="logic-card" data-letter="B">
+            <h3>Build for Fun</h3>
+            <p>Coding should be joyful.</p>
+          </div>
+          <div class="logic-card" data-letter="S">
+            <h3>Share What You Know</h3>
+            <p>Teach others what you've learned.</p>
+          </div>
+        </div>
+      </section>
     </section>
   </main>
 
@@ -45,3 +94,4 @@
   </footer>
 </body>
 </html>
+
