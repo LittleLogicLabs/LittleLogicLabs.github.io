@@ -3,40 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Get Involved - Little Logic Labs</title>
+  <title>Future Sponsors - Little Logic Labs</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-<header class="hero">
-  <h1>Little Logic Labs</h1>
-  <p>Where Kids Code Their Creativity</p>
-  <nav class="main-nav">
-    <a href="index.html">Home</a>
-    <a href="mission.html">Our Mission</a>
-    <a href="about.html">About Us</a>
-    <a href="programs.html">Programs</a>
-    <a href="projects.html">Upcoming Projects</a>
-    <a href="sponsors.html">Sponsors</a>
-    <a href="get-involved.html">Get Involved</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+  <!-- Sidebar Navigation -->
+  <div class="sidebar collapsed" id="sidebar">
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="mission.html">Our Mission</a>
+      <a href="about.html">About Us</a>
+      <a href="programs.html">Programs</a>
+      <a href="projects.html">Upcoming Projects</a>
+      <a href="sponsors.html">Sponsors</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 
-<main>
-  <section class="intro">
-    <h2>Get Involved</h2>
-    <p>
-      Whether you’re a parent, volunteer, educator, or donor, your support helps us grow and reach more children. We are working on building easy ways for you to join our mission.
-    </p>
-    <p><em>This page is a work in progress. Please check back soon to learn how you can get involved.</em></p>
-  </section>
-</main>
+  <!-- Toggle Button -->
+  <button class="floating-toggle" onclick="toggleSidebar()">☰</button>
 
-<footer>
-  <p>Contact us: <a href="mailto:saanvi@littlelogiclabs.com">saanvi@littlelogiclabs.com</a></p>
-</footer>
+  <!-- Page Content -->
+  <div class="content">
+    <header class="hero">
+      <h1>Little Logic Labs</h1>
+      <p>Where Kids Code Their Creativity</p>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h2>Become a Sponsor</h2>
+        <p>
+          At Little Logic Labs, we believe that every child should have the opportunity to explore the world of coding. With your support, we can reach more kids, launch innovative programs, and make technology accessible to underserved communities.
+        </p>
+        <p>
+          We’re currently seeking future sponsors who are passionate about education, innovation, and equity. Whether you're a local business, a tech company, or an individual donor, partnering with us creates lasting impact.
+        </p>
+        <p>
+          We offer various sponsorship tiers and recognition opportunities—ranging from event co-branding to featured spotlights in our newsletter and website.
+        </p>
+        <p><strong>Interested in partnering with us?</strong> Email us at <a href="mailto:saanvi@littlelogiclabs.com">saanvi@littlelogiclabs.com</a> and let's build the future together.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Contact us: <a href="mailto:saanvi@littlelogiclabs.com">saanvi@littlelogiclabs.com</a></p>
+    </footer>
+  </div>
+
+  <!-- Sidebar Toggle Script -->
+  <script>
+    function toggleSidebar() {
+      document.querySelector(".sidebar").classList.toggle("collapsed");
+    }
+  </script>
 
 </body>
 </html>
